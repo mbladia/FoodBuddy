@@ -164,7 +164,7 @@ footer{
 }
 
 /* Multiple Carousel */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
         display: none;
     }
@@ -180,7 +180,7 @@ footer{
 }
 
 /* display 3 */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
