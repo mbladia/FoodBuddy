@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Dynamic Classes */
+a{
+    text-decoration: none !important;
+}
+a:hover{
+    color: white;
+}
+.btn-first{
+    color: #fff;
+    background-color: #e93503;
+    border-color: #e93503;
+}
+.btn-first:hover{
+    color: #fff;
+    border-color: #e93503;
+    background-color: #be2900;
+}
+
+.sub-title{
+    margin: 30px 0;
+}
+.bg-first{
+    background: rgb(135,124,16);
+background: linear-gradient(180deg, rgba(135,124,16,1) 0%, rgba(250,126,90,1) 0%, rgba(167,72,45,1) 100%);
+}
+/* End of Dynamic Classes */
+
+/* Navigation Menu */
+.navbar{
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 10;
+}
+.navbar-brand{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: auto;
+    height: 40px;
+}
+.nav-link{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+/* Welcome Section */
+.welcome{
+    overflow: hidden;
+    height: 100vh;
+    background-color: rgba(250,126,90,1);
+    /* background: rgb(135,124,16);
+    background: linear-gradient(90deg, rgba(135,124,16,1) 0%, rgba(213,153,0,1) 0%, rgba(255,67,15,1) 0%, rgba(255,255,255,1) 82%); */
+}
+.welcome-image{
+    min-height: 200px;
+    background-image: url('./imgs/foodbuddy-welcome.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.welcome-desc{
+    /* height: 600px; */
+    margin-top: 7rem;
+}
+.street-text{
+    margin: 40px 0 0 0;
+    /* min-width: 340px;  */
+}
+.welcome button{
+    margin: 0 5px;
+    width: 100px;
+}
+
+/* Featured Section */
+
+.feature-box img{
+    margin: 20px 0 ;
+    box-shadow: 8px 8px #888888;
+    cursor: pointer;
+}
+
+.feature-box, .cities-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0 30px; */
+}
+.feature-box span{
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.store-logo img{
+   height: 80px;
+    width: auto;
+    margin: 0 10px;
+}
+.signup {
+    background-color: rgb(230, 230, 230);
+    padding: 40px 20px;
+    margin: 40px 0;
+}
+.signup img{
+    width: 120px;
+}
+
+/* Cities */
+.cities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px 15px;
+    background-image: url('./imgs/feature-background.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cities img{
+    width: 100%;
+    height: auto;
+}
+.city-name{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: .1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 3px;
+}
+.cities span{
+   color: white;
+   background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 3px;
+}
+.card-img-overlay{
+    transition: ease-in-out .3s;
+}
+.card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.301);    
+}
+/* Footer */
+.footer-icon i{
+    color: rgb(185, 250, 255);
+}
+
+/* Multiple Carousel */
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      /* transform: translateX(33.333%); */
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      /* transform: translateX(-33.333%); */
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
