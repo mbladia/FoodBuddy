@@ -11,6 +11,12 @@ body{
 }
 
 /* Dynamic Classes */
+.flex-col-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 a{
     text-decoration: none !important;
 }
@@ -40,7 +46,6 @@ background: linear-gradient(180deg, rgba(135,124,16,1) 0%, rgba(250,126,90,1) 0%
 /* Navigation Menu */
 .navbar{
     width: 100%;
-    position: absolute;
     background-color: rgba(255,255,255,0.7);
     z-index: 10;
 }
@@ -60,36 +65,27 @@ background: linear-gradient(180deg, rgba(135,124,16,1) 0%, rgba(250,126,90,1) 0%
 
 /* Welcome Section */
 .welcome{
-    overflow: hidden;
-    height: 100vh;
-    background-color: rgba(250,126,90,1);
-    /* background: rgb(135,124,16);
-    background: linear-gradient(90deg, rgba(135,124,16,1) 0%, rgba(213,153,0,1) 0%, rgba(255,67,15,1) 0%, rgba(255,255,255,1) 82%); */
-}
-.welcome-image{
-    min-height: 200px;
-    background-image: url('./imgs/foodbuddy-welcome.png');
-    background-position: left;
+    background-image: url('./imgs/welcome-img.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.welcome .row{
+    padding: 100px 20px ;
+}
 .welcome-desc{
-    /* height: 600px; */
-    margin-top: 7rem;
+    height: 100%;
+    margin-top: 50px;
+    padding: 20px 10px;
+    background-color: rgba(53, 22, 2, 0.7);
 }
-.street-text{
-    margin: 40px 0 0 0;
-    /* min-width: 340px;  */
-}
-.welcome button{
-    margin: 0 5px;
-    width: 100px;
-}
+
 
 /* Featured Section */
 
 .feature-box img{
-    margin: 20px 0 ;
+    margin: 20px 0;
+
     box-shadow: 8px 8px #888888;
     cursor: pointer;
 }
@@ -159,6 +155,10 @@ background: linear-gradient(180deg, rgba(135,124,16,1) 0%, rgba(250,126,90,1) 0%
     background-color: rgba(0, 0, 0, 0.301);    
 }
 /* Footer */
+footer{
+    z-index: 10;
+    margin-top: -2px;
+}
 .footer-icon i{
     color: rgb(185, 250, 255);
 }
@@ -199,9 +199,10 @@ background: linear-gradient(180deg, rgba(135,124,16,1) 0%, rgba(250,126,90,1) 0%
 .carousel-inner .carousel-item-left{ 
   transform: translateX(0);
 }
-@media only screen and (max-width: 600px) {
+
+/* @media only screen and (max-width: 768px) {
     .welcome-image{
         display: none;
         visibility: hidden;
     }
-}
+} */
