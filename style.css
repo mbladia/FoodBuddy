@@ -204,4 +204,8 @@ background: linear-gradient(180deg, rgba(135,124,16,1) 0%, rgba(250,126,90,1) 0%
         display: none;
     }
 }
-
+@media only screen and (min-width: 600px) {
+    .welcome-image{
+        display: none;
+    }
+}
