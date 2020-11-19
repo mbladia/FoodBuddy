@@ -164,7 +164,7 @@ footer{
 }
 
 /* Multiple Carousel */
-@media (max-width: 767px) {
+@media (max-width: 425px) {
     .carousel-inner .carousel-item > div {
         display: none;
     }
