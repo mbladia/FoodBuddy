@@ -1,0 +1,17 @@
+[
+    {  
+      "id":"1",
+      "name":"Jollibee",
+      "location":"Alaminos City"
+    },
+    {
+      "id":"71",
+      "name":"Mcdo",
+      "location":"Alaminos City"
+    },
+    {
+        "id":"80",
+        "name":"Mang inasal",
+        "location":"Alaminos City"
+    }
+  ]
